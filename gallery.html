@@ -1,0 +1,141 @@
+<!--Saffa Zeb (044)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery - Discover Pakistan</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Lightbox2 CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #006400;
+      padding: 10px 20px;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    nav li {
+      display: inline;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a.active {
+      text-decoration: underline;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .gallery-container img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-container img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #006400;
+  color: white;
+  margin-top: 40px;
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Discover Pakistan - Photo Gallery</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+      <li><a href="culture.html">Culture</a></li>
+      <li><a href="cities.html">Cities</a></li>
+      <li><a href="festivals.html">Festivities</a></li>
+      <li><a href="food.html">Famous Foods</a></li>
+      <li><a href="art.html">Handicrafts</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Explore the Beauty of Pakistan</h2>
+    <div class="gallery-container">
+      <a href="images/fort.png" data-lightbox="pakistan-gallery">
+        <img src="images/fort.png" alt="Lahore Fort">
+      </a>
+      <a href="images/badshahi.png" data-lightbox="pakistan-gallery">
+        <img src="images/badshahi.png" alt="Badshahi Mosque">
+      </a>
+      <a href="images/truck-art.png" data-lightbox="pakistan-gallery">
+        <img src="images/truck-art.png" alt="Truck Art">
+      </a>
+      <a href="images/blue-pottery.png" data-lightbox="pakistan-gallery">
+        <img src="images/blue-pottery.png" alt="Blue Pottery">
+      </a>
+      <a href="images/hunza.png" data-lightbox="pakistan-gallery">
+        <img src="images/hunza.png" alt="Hunza Valley">
+      </a>
+      <a href="images/mohenjo-daro.png" data-lightbox="pakistan-gallery">
+        <img src="images/mohenjo-daro.png" alt="Mohenjo-Daro">
+      </a>
+      <a href="images/food.png" data-lightbox="pakistan-gallery">
+        <img src="images/food.png" alt="Pakistani Food">
+      </a>
+      <a href="images/handicrafts.png" data-lightbox="pakistan-gallery">
+        <img src="images/handicrafts.png" alt="Handicrafts">
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Discover Pakistan | All rights reserved.</p>
+  </footer>
+
+  <!-- Lightbox2 JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+</body>
+</html>

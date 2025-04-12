@@ -1,0 +1,190 @@
+<!--Saffa Zeb (044)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the layout responsive -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+    }
+
+    header {
+        background-color: #006400;
+      padding: 10px 20px;
+      color: white;
+      text-align: center;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0;
+      list-style: none;
+      margin: 10px 0 0 0;
+    }
+
+    nav ul li {
+      margin: 10px 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a.active {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .contact-section {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .contact-section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .contact-section form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-section input,
+    .contact-section textarea {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    .contact-section button {
+      padding: 12px;
+      background-color: #007b5e;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-section button:hover {
+      background-color: #005a43;
+    }
+
+    footer {
+        ext-align: center;
+  padding: 15px;
+  background-color: #006400;
+  color: white;
+  margin-top: 40px;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul li {
+        margin: 8px 0;
+      }
+
+      .contact-section {
+        margin: 10px;
+        padding: 15px;
+      }
+
+      .contact-section h2 {
+        font-size: 22px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .contact-section input,
+      .contact-section textarea {
+        font-size: 14px;
+      }
+
+      .contact-section button {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Contact Us</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+      <li><a href="culture.html">Culture</a></li>
+      <li><a href="cities.html">Cities</a></li>
+      <li><a href="festivals.html">Festivities</a></li>
+      <li><a href="food.html">Famous Foods</a></li>
+      <li><a href="art.html">Handicrafts</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="contact-section">
+      <h2>We’d Love to Hear from You!</h2>
+      <form>
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" rows="6" placeholder="Your Message" required></textarea>
+        <button type="button" onclick="sendEmail()">Send Message</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Discover Pakistan | All rights reserved.</p>
+  </footer>
+
+  <script>
+    function sendEmail() {
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var message = document.getElementById('message').value;
+
+      var subject = "Message from " + name;
+      var body = "From: " + name + " (" + email + ")\n\n" + "Message:\n" + message;
+
+      var mailtoLink = "mailto:saffazeb402@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+
+      window.location.href = mailtoLink;
+    }
+  </script>
+
+</body>
+</html>
