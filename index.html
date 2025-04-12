@@ -5,64 +5,148 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Discover Pakistan</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="esha.css" />
   <style>
-    /* Ensuring all images are same size */
-    img {
-      width: 300px;
-      height: 200px;
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #006400;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    nav ul {
+      background-color: #008000;
+      list-style: none;
+      padding: 10px 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .hero-image {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      overflow: hidden;
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 100%;
       object-fit: cover;
+    }
+
+    .hero-text {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 20px 40px;
+      border-radius: 10px;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .content {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .content p {
+      line-height: 1.8;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #006400;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
+
+  <!-- Header -->
   <header>
-    <h1>Welcome to Pakistan</h1>
-    <p>Pakistan is a country full of wonders. It has tall mountains, green valleys, deserts, rivers, and a long coastline. 
-    But it's not just about nature – Pakistan is also home to a rich culture, warm-hearted people, and amazing traditions that go back thousands of years. 
-    This website helps you explore Pakistan from your screen – whether you want to learn about our heritage, colorful festivals, or modern cities, you’ll find everything right here.</p>
-
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="culture.html">Culture</a>
-      <a href="festivals.html">Festivals</a>
-      <a href="cities.html">Cities</a>
-    </nav>
-
-    <p>
-      ➤ <strong>Home:</strong> You are here! This page welcomes you and gives a quick overview of what you'll find on this site.  
-      <br>
-      ➤ <strong>Culture:</strong> Explore the daily lives of Pakistanis — including clothing, music, art, and traditions from different provinces like Punjab, Sindh, Balochistan, and KPK.
-      <br>
-      ➤ <strong>Festivals:</strong> Learn about the joyful events celebrated across Pakistan like Eid, Basant, Independence Day, and many cultural fairs.
-      <br>
-      ➤ <strong>Cities:</strong> Discover the unique charm of cities like Lahore, Karachi, Islamabad, and others. Each city has its own style, history, food, and attractions.
-    </p>
+    <h1>Discover Pakistan</h1>
   </header>
 
-  <section class="hero">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpjv2vfR-4YwkbZmiy9eQSwmIoIaQlY8TB3g&s" alt="">
-    <h2>Discover the Beauty, Culture & Traditions</h2>
-    
-<p>
-  Pakistan is a land of breathtaking natural beauty, vibrant cultures, and deep-rooted traditions. 
-  From the snowy peaks of the north to the sandy shores of the south, the country is filled with stunning landscapes that captivate every traveler. 
-  But Pakistan is more than just scenery — it's about the people, the festivals, the languages, the food, and the values that make this country truly special.
-</p>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="culture.html">Culture</a></li>
+      <li><a href="cities.html">Cities</a></li>
+      <li><a href="festivals.html">Festivities</a></li>
+      <li><a href="food.html">Famous Foods</a></li>
+      <li><a href="art.html">Handicrafts</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-<p>
-  Every province and region in Pakistan has its own story, style, and soul. From the colorful clothing of Punjab to the warm hospitality of Khyber Pakhtunkhwa, 
-  from the historical cities of Sindh to the untouched natural beauty of Gilgit-Baltistan, there's so much to explore and appreciate. 
-  The culture is a mix of centuries-old traditions, modern creativity, and the spirit of community that brings everyone together.
-</p>
+  <!-- Hero Image -->
+  <section class="hero-image">
+    <img src="images/pakistan-hero.jpg" alt="Beautiful Pakistan">
+    <div class="hero-text">
+      Explore the Beauty, Culture & Traditions of Pakistan
+    </div>
+  </section>
 
-<p>
-  On this website, you’ll journey through Pakistan’s famous landmarks, learn about its rich culture, experience the excitement of local festivals, 
-  and discover the charm of cities like Lahore, Karachi, and Islamabad. Whether you're visiting for the first time or rediscovering your roots, 
-  get ready to explore the heart and soul of Pakistan.
-</p>
+  <!-- Main Content -->
+  <section class="content">
+    <p>Pakistan is a land of breathtaking natural beauty, vibrant cultures, and deep-rooted traditions. 
+    From the snowy peaks of the north to the sandy shores of the south, the country is filled with stunning landscapes that captivate every traveler. 
+    But Pakistan is more than just scenery — it's about the people, the festivals, the languages, the food, and the values that make this country truly special.</p>
 
-    <p>
-      Pakistan is a land of deep history and natural beauty. From ancient Indus Valley civilization to modern skyscrapers in cities like Karachi, 
-      it’s a country of contrasts and colors. This website is made to help you experience the real Pakistan — its culture, people, cities, 
-      and celebrations — all explained in
+    <p>Every province and region in Pakistan has its own story, style, and soul. From the colorful clothing of Punjab to the warm hospitality of Khyber Pakhtunkhwa, 
+    from the historical cities of Sindh to the untouched natural beauty of Gilgit-Baltistan, there's so much to explore and appreciate. 
+    The culture is a mix of centuries-old traditions, modern creativity, and the spirit of community that brings everyone together.</p>
+
+    <p>On this website, you’ll journey through Pakistan’s famous landmarks, learn about its rich culture, experience the excitement of local festivals, 
+    and discover the charm of cities like Lahore, Karachi, and Islamabad. Whether you're visiting for the first time or rediscovering your roots, 
+    get ready to explore the heart and soul of Pakistan.</p>
+
+    <p>Pakistan is a land of deep history and natural beauty. From ancient Indus Valley civilization to modern skyscrapers in cities like Karachi, 
+    it’s a country of contrasts and colors. This website is made to help you experience the real Pakistan — its culture, people, cities, 
+    and celebrations — all from your screen.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Discover Pakistan | All rights reserved.</p>
+  </footer>
+  
+</body>
+</html>
